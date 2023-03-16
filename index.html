@@ -15,14 +15,14 @@
 
         
         const videoDisappear = () => {
-            console.log('function called');
+            console.log('video disappear function called');
             document.getElementById("embedded-video").style.display = 'none';
         }
 
         function iframeclick() {
-            console.log('function called');
+            //console.log('function called');
             document.getElementById("embedded-video").contentWindow.document.body.onclick = function() {
-                setTimeout(videoDisappear(), 18000)
+                setTimeout(videoDisappear(), 3000)
             }
         }
 
